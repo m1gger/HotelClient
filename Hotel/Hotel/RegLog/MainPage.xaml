@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.MainPage">
+
+    <StackLayout Margin="40,0">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Регистрация" FontSize="25" Margin="0, 30" FontAttributes="Bold" TextColor="#333333" HorizontalOptions="StartAndExpand"/>
+            <Button x:Name="logButton" Text="Войти" TextTransform="None" Clicked="LoginButtonClick" HorizontalOptions="EndAndExpand" FontSize="25"  Margin="0, 20" FontAttributes="Bold" BackgroundColor="#2196f3" TextColor="White" CornerRadius="15"/>
+        </StackLayout>
+        <Label Text="ИМЯ" CharacterSpacing="2" TextColor="#bbb6b9" FontAttributes="Bold"/>
+        <Frame Padding="0, -8" BorderColor="#e5e5e5" HeightRequest="50" BackgroundColor="#e5e5e5" CornerRadius="15">
+            <Entry x:Name="nameField" ClearButtonVisibility="WhileEditing" BackgroundColor="#e5e5e5" FontAttributes="Bold" TextColor="Gray"/>
+        </Frame>
+        <Label Text="ФАМИЛИЯ" CharacterSpacing="2" TextColor="#bbb6b9" FontAttributes="Bold"/>
+        <Frame Padding="0, -8" BorderColor="#e5e5e5" HeightRequest="50" BackgroundColor="#e5e5e5" CornerRadius="15">
+            <Entry x:Name="surnameField" ClearButtonVisibility="WhileEditing" BackgroundColor="#e5e5e5" FontAttributes="Bold" TextColor="Gray"/>
+        </Frame>
+        <Label Text="ЛОГИН" CharacterSpacing="2" TextColor="#bbb6b9" FontAttributes="Bold"/>
+        <Frame Padding="0, -8" BorderColor="#e5e5e5" HeightRequest="50" BackgroundColor="#e5e5e5" CornerRadius="15">
+            <Entry x:Name="loginField" ClearButtonVisibility="WhileEditing" BackgroundColor="#e5e5e5" FontAttributes="Bold" TextColor="Gray"/>
+        </Frame>
+        <Label Text="ПАРОЛЬ" CharacterSpacing="2" TextColor="#bbb6b9" FontAttributes="Bold"/>
+        <Frame Padding="0, -8" BorderColor="#e5e5e5" HeightRequest="50" BackgroundColor="#e5e5e5" CornerRadius="15">
+            <Entry x:Name="passField" ClearButtonVisibility="WhileEditing" BackgroundColor="#e5e5e5" IsPassword="True"/>
+        </Frame>
+        <Button x:Name="regButton" Text="Подтвердить" TextTransform="None" Clicked="ButtonClick" FontSize="25"  Margin="0, 20" FontAttributes="Bold" BackgroundColor="#2196f3" TextColor="White" CornerRadius="15"/>
+        <Label x:Name="errorText" Text="" TextColor="Red" FontSize="15" TextTransform="Uppercase" FontAttributes="Bold"/>
+    </StackLayout>
+    
+</ContentPage>

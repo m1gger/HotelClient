@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hotel.AboutSUSPageUWP" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAABIAAAEAAAAAAAEAAAAAAAAIAAAUAA=</HashCode>
+      <FileName>FlyoutUWP\AboutSUSPageUWP.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.AppPageUWP" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQACEAAgAAgFIAAAEAAAAAAAEAAAAAAAAIAAAUAI=</HashCode>
+      <FileName>FlyoutUWP\AppPageUWP.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.ContactPageUWP" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAABIAAAEAAAAAAAEAAAAAAAAIAAAUAA=</HashCode>
+      <FileName>FlyoutUWP\ContactPageUWP.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.ServicePageUWP" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAABIAAAEAAAAAAAEAAAAAAAAIAAAUAA=</HashCode>
+      <FileName>FlyoutUWP\ServicePageUWP.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.AboutSUS" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FlyoutAndroid\AboutSUS.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.AppPage" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAgAAABIAAAEAAAAAAAEAAAAAAAAIAAAUAA=</HashCode>
+      <FileName>FlyoutAndroid\AppPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Contacs" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FlyoutAndroid\Contacs.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.MainInFlyout" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAgAAgEAAAAEAAAAAAAEAAAAQAAAAAAAEAI=</HashCode>
+      <FileName>FlyoutAndroid\MainInFlyout.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Services" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FlyoutAndroid\Services.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Client" Collapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAEAAAAAgCEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.GlobalVariables" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAA=</HashCode>
+      <FileName>Logic\GlobalVariables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Room" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAIAABACAAARAAAAAQAAAAAAAgA=</HashCode>
+      <FileName>Logic\Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.UserName" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAQAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\UserName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.LoginPage" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RegLog\LoginPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.MainPage" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>RegLog\MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.FindedRoomPage" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIBMAABBEwAAAAIAAAAAAAAAQABAAAAgAAAAEAA=</HashCode>
+      <FileName>FindedRoomPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

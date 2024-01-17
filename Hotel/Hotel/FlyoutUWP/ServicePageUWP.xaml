@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.ServicePageUWP">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStack">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout x:Name="Buttons" BackgroundColor="#97d1ff" Margin="0,0,-6,0" WidthRequest="114" >
+                    <Label Text="Меню" FontSize="25" BackgroundColor="#2196f3" HeightRequest="59" TextColor="White" Padding="20, 10, 0, 0" FontAttributes="Bold"/>
+                    <Button Text="Главная"  BackgroundColor="#97d1ff" Clicked="MainButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Услуги"   BackgroundColor="#97d1ff" Clicked="ServicesButtonClick" TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="О нас"    BackgroundColor="#97d1ff" Clicked="AboutUsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Контакты" BackgroundColor="#97d1ff" Clicked="ContacsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Выйти"    BackgroundColor="#97d1ff" Clicked="ExitButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout x:Name="MainContent" HorizontalOptions="FillAndExpand" Margin="0">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="#2196f3" HeightRequest="68" >
+                        <Label Text="Услуги" x:Name="CurMenuPage" FontSize="25" Margin="0" TextColor="White" HorizontalOptions="StartAndExpand" Padding="15, 10, 0, 0" FontAttributes="Bold"/>
+                        <Label x:Name="GuestName" FontSize="22" Margin="0"  TextColor="White" HorizontalOptions="EndAndExpand" Padding="0, 10, 16, 0" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Margin="15">
+                        <Label Text="Удобства отеля:"
+                                     FontAttributes="Bold"
+                                     FontSize="Large"          
+                                     Margin="0,0,0,10"/>
+                        <ListView>
+                            <ListView.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>• Крытый бассейн</x:String>
+                                    <x:String>• Трансфер от/до аэропорта</x:String>
+                                    <x:String>• Спа и оздоровительный центр</x:String>
+                                    <x:String>• Фитнес-центр</x:String>
+                                    <x:String>• Wi-Fi доступен на всей территории</x:String>
+                                    <x:String>• Ресторан с превосходным завтраком</x:String>
+                                    <x:String>• Бесплатные туалетно-косметические принадлежности</x:String>
+                                    <x:String>• Сад для отдыха</x:String>
+                                    <x:String>• Спорт и отдых: Верховая езда, Библиотека, Настольные игры и/или пазлы</x:String>
+                                    <x:String>• Парковка</x:String>
+                                    <x:String>• Обмен валюты</x:String>
+                                    <x:String>• Услуги по глажению одежды</x:String>
+                                    <x:String>• Прачечная</x:String>
+                                    <x:String>• Прокат автомобилей</x:String>
+                                    <x:String>• Доставка еды и напитков в номер</x:String>
+                                    <x:String>• Шезлонги/пляжные кресла</x:String>
+                                    <x:String>• Бассейн с подогревом</x:String>
+                                </x:Array>
+                            </ListView.ItemsSource>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Label Text="{Binding .}" TextColor="Black" />
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.Services">
+
+    <StackLayout Margin="20">
+        <Label Text="Удобства отеля:"
+               FontAttributes="Bold"
+               FontSize="Large"
+               TextColor="#333333"
+               Margin="0,0,0,10"/>
+
+        <ListView >
+            <ListView.ItemsSource >
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>• Крытый бассейн</x:String>
+                    <x:String>• Трансфер от/до аэропорта</x:String>
+                    <x:String>• Спа и оздоровительный центр</x:String>
+                    <x:String>• Фитнес-центр</x:String>
+                    <x:String>• Wi-Fi доступен на всей территории</x:String>
+                    <x:String>• Ресторан с превосходным завтраком</x:String>
+                    <x:String>• Бесплатные туалетно-косметические принадлежности</x:String>
+                    <x:String>• Сад для отдыха</x:String>
+                    <x:String>• Спорт и отдых: Верховая езда, Библиотека, Настольные игры и/или пазлы</x:String>
+                    <x:String>• Парковка</x:String>
+                    <x:String>• Обмен валюты</x:String>
+                    <x:String>• Услуги по глажению одежды</x:String>
+                    <x:String>• Прачечная</x:String>
+                    <x:String>• Прокат автомобилей</x:String>
+                    <x:String>• Доставка еды и напитков в номер</x:String>
+                    <x:String>• Шезлонги/пляжные кресла</x:String>
+                    <x:String>• Бассейн с подогревом</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding .}" TextColor="Black" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

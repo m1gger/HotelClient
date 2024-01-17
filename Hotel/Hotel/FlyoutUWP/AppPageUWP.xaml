@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.AppPageUWP">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStack">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout x:Name="Buttons" BackgroundColor="#97d1ff" Margin="0,0,-6,0" WidthRequest="120" >
+                    <Label Text="Меню" FontSize="25" BackgroundColor="#2196f3" HeightRequest="59" TextColor="White" Padding="20, 10, 0, 0" FontAttributes="Bold"/>
+                    <Button Text="Главная"  BackgroundColor="#97d1ff" Clicked="MainButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Услуги"   BackgroundColor="#97d1ff" Clicked="ServicesButtonClick" TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="О нас"    BackgroundColor="#97d1ff" Clicked="AboutUsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Контакты" BackgroundColor="#97d1ff" Clicked="ContacsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Выйти"    BackgroundColor="#97d1ff" Clicked="ExitButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout x:Name="MainContent" HorizontalOptions="FillAndExpand" Margin="0">
+                    <StackLayout x:Name="Liniya" Orientation="Horizontal" BackgroundColor="#2196f3" HeightRequest="59" >
+                        <Label Text="Главная" x:Name="CurMenuPage" FontSize="25" Margin="0" TextColor="White" HorizontalOptions="StartAndExpand" Padding="15, 10, 0, 0" FontAttributes="Bold"/>
+                        <Label x:Name="GuestName" FontSize="22" Margin="0"  TextColor="White" HorizontalOptions="EndAndExpand" Padding="0, 10, 16, 0" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <Label x:Name="isGuest" FontSize="17" HorizontalOptions="CenterAndExpand" TextColor="#333333" Margin="0, 10" FontAttributes="Bold"/>
+                    <ScrollView>
+                        <StackLayout>
+                            <Frame Padding="0" Margin="20, 0" CornerRadius="20" HasShadow="True">
+                                <CarouselView Margin ="0" HeightRequest="400" ItemsSource="{Binding ImageUrls}">
+                                    <CarouselView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Image Source="{Binding .}" Aspect="AspectFill" />
+                                        </DataTemplate>
+                                    </CarouselView.ItemTemplate>
+                                </CarouselView>
+                            </Frame>
+                            <StackLayout x:Name="DateButtonStack">
+                                <Button x:Name="dateButton" />
+                            </StackLayout>
+                            <Frame HasShadow="True" Margin="10">
+                                <StackLayout>
+                                    <Label x:Name="capacity" FontSize="15"  Margin="10, 0, 0, 0" TextColor="#333333" FontAttributes="Bold"/>
+                                    <Label x:Name="bed" FontSize="15"  Margin="10, 0, 0, 0" TextColor="#333333" FontAttributes="Bold"/>
+                                    <Label x:Name="square" FontSize="15" Margin="10, 0, 0, 0" TextColor="#333333" FontAttributes="Bold"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.ContactPageUWP">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStack">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout x:Name="Buttons" BackgroundColor="#97d1ff" Margin="0, 0, -6, 0" WidthRequest="110" HeightRequest="1000">
+                    <Label Text="Меню" FontSize="25" BackgroundColor="#2196f3" HeightRequest="60" TextColor="White" Padding="20, 10, 0, 0" FontAttributes="Bold"/>
+                    <Button Text="Главная"  BackgroundColor="#97d1ff" Clicked="MainButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Услуги"   BackgroundColor="#97d1ff" Clicked="ServicesButtonClick" TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="О нас"    BackgroundColor="#97d1ff" Clicked="AboutUsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Контакты" BackgroundColor="#97d1ff" Clicked="ContacsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Выйти"    BackgroundColor="#97d1ff" Clicked="ExitButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout x:Name="MainContent" HorizontalOptions="FillAndExpand" Margin="0">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="#2196f3" HeightRequest="60" >
+                        <Label Text="Контакты" x:Name="CurMenuPage" FontSize="25" Margin="0" TextColor="White" HorizontalOptions="StartAndExpand" Padding="15, 10, 0, 0" FontAttributes="Bold"/>
+                        <Label x:Name="GuestName" FontSize="22" Margin="0"  TextColor="White" HorizontalOptions="EndAndExpand" Padding="0, 10, 16, 0" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <Label Text="Телефон" FontSize="20" HorizontalOptions="StartAndExpand" TextColor="Black" Margin="15, 10" FontAttributes="Bold"/>
+                    <StackLayout Margin="15,0">
+                        <Label Text="+996 777 777 777"/>
+                        <Label Text="+996 312 777 777"/>
+                    </StackLayout>
+                    <Label Text="E-mail" FontSize="20" HorizontalOptions="StartAndExpand" TextColor="Black" Margin="15, 10" FontAttributes="Bold"/>
+                    <StackLayout Margin="15,0">
+                        <Label Text="dostukhotel1@gmail.com"/>
+                        <Label Text="dossupport77@gmail.com"/>
+                    </StackLayout>
+                    <Label Text="Адрес" FontSize="20" HorizontalOptions="StartAndExpand" TextColor="Black" Margin="15, 10" FontAttributes="Bold"/>
+                    <StackLayout Margin="15,0">
+                        <Label Text="Кыргызстан, г. Бишкек, Проспект Ленина, 156а"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

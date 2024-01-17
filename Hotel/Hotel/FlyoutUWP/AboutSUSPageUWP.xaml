@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.AboutSUSPageUWP">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStack">
+            <StackLayout Orientation="Horizontal">
+                <StackLayout x:Name="Buttons" BackgroundColor="#97d1ff" Margin="0, 0, -6, 0" WidthRequest="130">
+                    <Label Text="Меню" FontSize="25" BackgroundColor="#2196f3" HeightRequest="60" TextColor="White" Padding="20, 10, 0, 0" FontAttributes="Bold"/>
+                    <Button Text="Главная"  BackgroundColor="#97d1ff" Clicked="MainButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Услуги"   BackgroundColor="#97d1ff" Clicked="ServicesButtonClick" TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="О нас"    BackgroundColor="#97d1ff" Clicked="AboutUsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Контакты" BackgroundColor="#97d1ff" Clicked="ContacsButtonClick"  TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                    <Button Text="Выйти"    BackgroundColor="#97d1ff" Clicked="ExitButtonClick"     TextColor="#333333" Padding="0,10" FontSize="16" FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout x:Name="MainContent" HorizontalOptions="FillAndExpand" Margin="0">
+                    <StackLayout Orientation="Horizontal" BackgroundColor="#2196f3" HeightRequest="79" >
+                        <Label Text="О нас" x:Name="CurMenuPage" FontSize="25" Margin="0" TextColor="White" HorizontalOptions="StartAndExpand" Padding="15, 10, 0, 0" FontAttributes="Bold"/>
+                        <Label x:Name="GuestName" FontSize="22" Margin="0"  TextColor="White" HorizontalOptions="EndAndExpand" Padding="0, 10, 16, 0" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <Label Text="Dostuk Hotel" FontSize="20" HorizontalOptions="CenterAndExpand" TextColor="Black" Margin="0, 10" FontAttributes="Bold"/>
+                    <ScrollView>
+                        <StackLayout>
+                            <Frame Padding="0" Margin="15, 0" CornerRadius="10" HasShadow="True" WidthRequest="100">
+                                <Label HorizontalTextAlignment="Center" MaxLines="21" FontSize="16" Text="Добро пожаловать в наш уютный отель, где роскошь встречает гостеприимство, создавая идеальное пространство для незабываемого отдыха. Наш отель – это оазис комфорта и стиля, где каждая деталь задумана с заботой о вашем удовлетворении. Расположенный в самом сердце прекрасного города Бишкек, наш отель предлагает удобный доступ к главным достопримечательностям, деловым районам и развлекательным заведениям. Независимо от того, вы приехали по делам или на отдых, наш отель является идеальным выбором для всех типов путешественников. Наши просторные номера оформлены с любовью к деталям, обеспечивая высокий уровень уюта и современные удобства. Гостей ждут комфортабельные кровати, элегантная мебель и все необходимое для приятного пребывания. В каждом номере предусмотрены современные технологии, чтобы удовлетворить даже самые взыскательные потребности. Наш ресторан предлагает изысканные блюда, приготовленные опытными шеф-поварами из свежих и высококачественных продуктов. Гурманы найдут здесь настоящий рай, наслаждаясь изысканным меню и уютной атмосферой. Отель также предоставляет обширные возможности для отдыха и релаксации, включая фитнес-центр, спа-комплекс и открытый бассейн. Наши гостеприимные сотрудники всегда готовы помочь вам с организацией мероприятий, экскурсий и других развлечений. Наш отель - это не просто место для ночлега, это пространство, где создаются воспоминания. Приглашаем вас на незабываемый опыт в нашем уникальном отеле, где каждый момент наполнен заботой и вниманием к вашим потребностям."/>
+                            </Frame>
+                            <Image x:Name="logo" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

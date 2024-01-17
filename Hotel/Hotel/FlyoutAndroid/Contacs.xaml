@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.Contacs">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainContent" HorizontalOptions="FillAndExpand" Margin="0">
+            <Label Text="Телефон" FontSize="20" HorizontalOptions="StartAndExpand" TextColor="#333333" Margin="15, 10" FontAttributes="Bold"/>
+            <StackLayout Margin="15,0">
+                <Label Text="+996 777 777 777"/>
+                <Label Text="+996 312 777 777"/>
+            </StackLayout>
+            <Label Text="E-mail" FontSize="20" HorizontalOptions="StartAndExpand" TextColor="#333333" Margin="15, 10" FontAttributes="Bold"/>
+            <StackLayout Margin="15,0">
+                <Label Text="dostukhotel1@gmail.com"/>
+                <Label Text="dossupport77@gmail.com"/>
+            </StackLayout>
+            <Label Text="Адрес" FontSize="20" HorizontalOptions="StartAndExpand" TextColor="#333333" Margin="15, 10" FontAttributes="Bold"/>
+            <StackLayout Margin="15,0">
+                <Label Text="Кыргызстан, г. Бишкек, Проспект Ленина, 156а"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
